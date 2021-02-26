@@ -5,8 +5,6 @@ ok - das scheint zu funktionieren; ev. könnten Arbeiten auch direkt hier verfas
 
 fügen wir hier noch eine Ergänzung an
 
-```markdown
 
 $1+2\neq3$
 
-```
