@@ -6,5 +6,5 @@ ok - das scheint zu funktionieren; ev. könnten Arbeiten auch direkt hier verfas
 fügen wir hier noch eine Ergänzung an
 
 
-$1+2\neq3$
+$`1+2\neq3`$
 
