@@ -1,0 +1,28 @@
+%% Mit Prozentzeichen werden Kommentare gekennzeichnet
+\documentclass[british,german,11pt]{scrartcl}    %% Deklaration der Dokumentart
+%% Hier werden die Angaben fürs Layout eingebunden
+\input{ layout/praeambel.tex }
+%% Deckblatt
+\input{ deckblatt.tex }
+%% Hier beginnt der eigentliche Text
+\usepackage{blindtext}
+\begin{document}
+\begin{textblock}{15}[0,0](-.75,1.4)
+\huge \textbf{\thetitle}\normalsize
+
+\thedate
+\vspace{1cm}
+
+Name:
+\end{textblock}
+
+\thispagestyle{firstpage}
+
+\RaggedRight
+
+\textcolor{white}{x}
+\vspace{5cm}
+
+\input{ inhalt.tex }
+
+\end{document}

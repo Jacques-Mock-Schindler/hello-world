@@ -1,0 +1,149 @@
+%% In dieses File kommt der Eigentliche Inhalt des Dokuments.
+% \vspace{1cm}
+%\begin{tikzpicture}
+%    \draw[step=.5cm,black,line width=0.2mm,line cap=round,dash pattern=on
+%    0.05mm off 4.95mm] (-.5,0) grid (14,4);
+%\end{tikzpicture}
+\section{Aufgabe}
+\textit{Gewichtung der Aufgabe 39\% \textcolor{red}{7 Punkte}}
+
+Zur Finanzierung eines Investitionsprojektes stehen insgesamt maximal
+CHF~1\,000\,000.- zur Verfügung. Die Unternehmung rechnet grundsätzlich
+mit einem kalkulatorischen Zins von 10\%.
+
+Variante A stellt sich folgendermassen dar:
+
+\begin{tabular}[h]{lr}
+  Anschaffungspreis&400\,000\\
+  Gewinn& 20\,000\\
+\end{tabular}
+
+Variante B basiert auf folgenden Grundlagen:
+
+\begin{tabular}[H]{lr}
+  Anschaffungspreis&300\,000\\
+  Liquidationserlös&50\,000\\
+  Nutzungsdauer&5 Jahre\\
+  Laufende Betriebskosten&8\,000\\
+  Erlös&93\,500\\
+\end{tabular}
+
+Geben Sie zu Handen der Geschäftsleitung eine begründete Empfehlung ab.
+Legen Sie dazu allfällige Berechnungen transparent dar.
+
+\color{red}
+
+
+\begin{tabular}[H]{lr}
+  \multicolumn{2}{l}{\textbf{Variante A}}\\
+  Anschaffungspreis&400\,000\\
+  Gewinn& 20\,000\\
+  Rendite&10\%\\
+\end{tabular}
+
+\vspace{3mm}
+
+\begin{tabular}[H]{lr}
+  \multicolumn{2}{l}{\textbf{Variante B}}\\
+  Anschaffungspreis&300\,000\\
+  Liquidationserlös&50\,000\\
+  Nutzungsdauer&5 Jahre\\
+  Laufende Betriebskosten&8\,000\\
+  mittlerer Zins&17\,500\\
+  Abschreibungen&50\,000\\
+  Erlös&93\,500\\
+  Gewinn&18\,000\\
+  Rendite&10.30\%\\
+\end{tabular}
+
+Variante B ist vorzuziehen. Sie weist eine höhere Rendite auf und könnte
+mit dem zur Verfügung stehenden Kapital drei Mal umgesetzt werden.
+
+Noch besser wäre eine Kombination von zwei Maschinen der Variante B mit
+einer Maschine der Variante A.
+
+\itshape
+Korrekturanweisung: Darstellung 1 Punkt, mittlerer Zins 1 Punkt,
+Abschreibungen 1 Punkt, Gewinn 1 Punkt, Rendite 1 Punkt, traditionelle
+Empfehlung 1 Punkt, Kombination 2 Punkte
+\normalfont
+
+\color{black}
+
+\section{Aufgabe}
+\textit{Gewichtung der Aufgabe 33\% \textcolor{red}{6 Punkte}}
+
+Vergleichen Sie zwei Projekte, von denen folgende Informationen
+vorliegen:
+
+\vspace{3mm}
+
+\begin{tabular}[H]{lrlr}
+  \multicolumn{2}{l}{\textbf{Variante A:}}&\multicolumn{2}{l}{\textbf{Variante B:}}\\
+  Investiertes Kapital:&100\,000&          Investiertes Kapital:&130\,000\\
+  jährliche Rückflüsse:&50\,000&           jährliche Rückflüsse:&39\,000\\
+  Nutzungsdauer:&3 Jahre&                  Nutzungsdauer:&6 Jahre\\
+  kalkulatorischer Zins:&7.5\%&            kalkulatorischer Zins:&7.5\%\\
+\end{tabular}
+
+\vspace{3mm}
+
+Zeigen Sie mit Hilfe transparenter Berechnungen, welches Projekt Sie der
+Geschäftsleitung empfehlen.
+
+\color{red}
+\begin{adjustwidth}{-2cm}{}
+\begin{tabular}[H]{lrrrrrrrrr}
+  \toprule
+  $i=.075$&$K_0$&$NPV$&$PV$&1&2&3&4&5&6\\
+  $v$&&&&$\frac{1}{1.075^1}$&$\frac{1}{1.075^2}$&$\frac{1}{1.075^3}$&$\frac{1}{1.075^4}$&$\frac{1}{1.075^5}$&$\frac{1}{1.075^6}$\\
+  &&&&0.9302&0.8653&0.8050&0.7488&0.6966&0.6480\\
+  \midrule
+  Variante
+  A&100\,000&30\,026&130\,026&50\,000&50\,000&50\,000&---&---&---\\
+  \multicolumn{4}{l}{CF Variante A abgezinst}&46512&43267&40248&---&---&---\\
+  \multicolumn{2}{l}{NPV A kumuliert}&54\,196&&&&&&&\\
+  \midrule
+  Variante
+  B&130\,000&53\,060&183\,060&39\,000&39\,000&39\,000&39\,000&39\,000&39\,000\\
+  \multicolumn{4}{l}{CF Variante A
+  abgezinst}&36279&33748&31393&29203&27166&25270\\
+ \bottomrule 
+\end{tabular}
+\end{adjustwidth}
+
+Variante A hat zwar bei nur einem Durchlauf den tieferen Net Present
+Value, da das Projekt aber zweimal hintereinander laufen kann wird der
+kumulierte NPV grösser als jener der Variante B.
+
+\itshape
+Korrekturanweisung: Darstellung 1 Punkt, Berechnung A 1 Punkt, Berechnung A Phase 2 1 Punkt,
+Berechnung B 1 Punkt, Empfehlung basierend auf einem Durchlauf 1 Punkt,
+Empfehlung basierend auf den kumulierten NPV 2 Punkte.
+\normalfont
+\color{black}
+
+\section{Aufgabe}
+\textit{Gewichtung der Aufgabe 28\% \textcolor{red}{5 Punkte}}
+
+Unterziehen Sie das Investitionsrechnungsverfahren der Internal Rate of
+Return (IRR) einer kritischen Würdigung.
+
+\color{red}
+Mit der Internal Rate of Return wird berechnet zu welchem
+kalkulatorischen Zins der Net Present Value gerade Null ist (1 Pt).
+Eine Stärke des IRR liegt darin, dass Projekte mit unterschiedlichen
+Volumina und Laufzeiten miteinander vergleichbar werden (1 Pt).
+Eine Schwäche liegt allerdings darin, dass Grössen die ohnehin nur
+geschätzt sind auf mehrere Stellen hinter dem Koma gerechnet werden
+können und so eine Scheingenauigkeit ergeben (1 Pt).
+Insgesamt ist das Verfahren gemessen am Erkenntnisgewinn wohl zu
+aufwändig (1 Pt).
+
+\itshape
+Korrekturanweisung: Sprache 1 Punkt, Beschreibung des Phänomens 1 Punkt, eine plausible
+Stärke 1 Punkt, eine plausible Schwäche 1 Punkt, konsequentes Fazit 1
+Punkt
+\normalfont
+
+\includepdf[landscape=true]{abzinsungstabelle.pdf}

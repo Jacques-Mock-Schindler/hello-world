@@ -1,0 +1,144 @@
+\usepackage[%
+            a4paper,
+            width=150mm,
+            left=35mm,
+            bottom=30mm,
+            top=20mm,
+            %headheight=10mm,
+            headsep=25mm,
+            includehead
+            ]{geometry}
+\usepackage[utf8]{inputenc}                 %% Standardinputformat in UTF-8
+\usepackage[german]{babel}                  %% Umstellung der Standardisierten Titel auf Deutsch
+\usepackage[dvipsname]{xcolor}
+\usepackage{multirow}
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{pdfpages}
+%\usepackage{enumitem}
+\usepackage{ragged2e}
+\usepackage{changepage}
+\usepackage{titling}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{enumerate}                      %% Feinere Nummerierungen
+\usepackage{textpos}
+\usepackage{fancyhdr}                       %% Ermöglicht die feine Steuerung der Kopf- und Fusszeilen
+\pagestyle{fancy}
+\fancyhead[L,C]{}
+\fancyhead[R]{%
+\vspace{-29mm}
+\tiny
+\begin{tabular}{m{6mm}m{29mm}}
+  \multirow{4}{*}{\includegraphics[width=6mm]{layout/schild.eps}}&Kantonsschule
+  Büelrain\\
+  &\thetitle\\
+  &\thedate\\
+  &\thepage/\pageref{LastPage}\\
+\end{tabular}
+\normalsize
+}
+\fancyfoot[L,C,R]{}
+
+\fancypagestyle{firstpage}{%
+\lhead{%
+    \begin{tikzpicture}[remember picture, overlay]
+      \node[draw=none] at (-2,0) (leu)
+      {\includegraphics[width=2.25cm]{layout/leu.eps}\raisebox{1.3cm}{\includegraphics[width=6mm]{layout/schild.eps}}};
+      \node[draw=none, anchor=west, right= -3mm of leu] (absender) {%
+      \footnotesize
+      \color{black}
+      \begin{tabular}{l}
+        Kanton Zürich\\
+        \large \textbf{Kantonsschule Büelrain}\\
+        Fachschaft WR\\
+      \end{tabular}
+      };
+      \node[draw=none, anchor=west, below right = .25cm and -5.5cm of absender] (autor) {%
+      \footnotesize
+      \color{black}
+      \begin{tabular}{l}
+        \theauthor\\
+        Rosenstrasse 1\\
+        8400 Winterthur\\
+        jacques.mock@kbw.ch\\
+        www.kbw.ch\\
+      \end{tabular}
+      };
+    \end{tikzpicture}
+    }
+\rhead{}
+}
+
+\fancypagestyle{inhaltsverzeichnis}{%
+            \lhead{}
+            \rhead{%
+            \tiny
+            \begin{tabular}{m{6mm}m{2.9cm}}
+                \includegraphics[width=6mm]{layout/schild.eps}&\thepage/\pageref{LastPage}\\
+            \end{tabular}
+            \normalsize
+              }
+            }
+\renewcommand{\headrulewidth}{0pt}
+
+\usepackage{helvet}                         %% Schriftart Helvetica
+\renewcommand{\familydefault}{\sfdefault}   %% Definition Helvetica als Standardschrift
+%\usepackage{a4}                             %% Seitenformat A4
+\usepackage[T1]{fontenc}                    %% Westeuropäischer Zeichensatz
+%
+
+\usepackage[backend=biber,                  %% Steuerung der Darstellung der Fussnoten und des Literaturverzeichnisses
+            isbn=false,
+            autopunct=false,
+            sorting=none,
+            style=verbose-ibid]{biblatex}
+\DeclareNameAlias{author}{last-first}        %% Voranstellung des Nachnamens für die Sortierung in Verzeichnissen
+\bibliography{references}                    %% Deklaration der Literaturdatenbank
+
+\usepackage{tikz}                            %% Graphikprogramm
+\usetikzlibrary{positioning,
+                fit,
+                calc,
+                shapes,
+                shadows,
+                arrows,
+                trees,
+                decorations.markings,
+                decorations.pathreplacing,
+                decorations.text}
+\usepackage{pgfplots}                
+
+\usepackage{microtype}                      %% Schönere Darstellung der Buchstaben
+
+\usepackage[%ps2pdf                         %% Steuerung der PDF-Ausgabe
+	]{thumbpdf}
+\usepackage[%                               %% Inhaltsverzeichnis als Hyperlink
+	%ps2pdf,
+	pdfa]{hyperref}
+	%pagebackref]{hyperref}
+\hypersetup{%                               %% Darstellung der Links
+   colorlinks=true,        % Einf\"arbung von Verkn\"upfungen
+   linkcolor=black,        % stzt die Linkfarbe auf schwarz
+   citecolor=black,        % Literaturzitate in schwarz
+   urlcolor=black,         % URL werden schwarz dargestellt
+   breaklinks=true,        % erm\"oglicht mehrzeilige Links
+   pdfpagemode=UseThumbs,  % Anzeige der Piktogramme
+   bookmarksopen=true,     % Anzeige aller Ebenen
+   bookmarksnumbered=true, % Anzeige der Abschnittsnummern
+   pdfstartpage={1},       % Startseite
+   pdftitle={Vorlage Rechtstext PVBR 2bH},
+   pdfsubject={Prüfung},
+   pdfauthor={Jacques Mock Schindler},%
+   pdfkeywords={},
+   pdfcreator={Adobe-Acrobat-Distiller},%
+   pdfproducer={LaTeX with hyperref and thumbpdf}
+}
+\usepackage{lastpage}                        %% von Seiten
+
+\renewcommand\labelitemi{--}
+\sloppy
+\usepackage{xcolor}
+\definecolor{zhblue}{cmyk}{100,0,0,0}
